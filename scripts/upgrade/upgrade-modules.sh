@@ -19,9 +19,9 @@ export TMP_INSTALL=/tmp/alfrescoinstall
 
 
 cd /tmp/
-wget https://github.com/Greencorecr/alfresco-ubuntu-install/blob/master/modules/transformador.tar.xz
+wget https://github.com/Greencorecr/alfresco-ubuntu-install/blob/master/modules/transformador.tar.xz?raw=true -O transformador.tar.xz
 tar xf transformador.tar.xz
-mv usr/local/bin/transformador /usr/local/bin/
+mv transformador /usr/local/bin/
 mv /usr/local/bin/transformador/transformador.service /etc/init.d/transformador
 
 sudo nohup /opt/alfresco/alfresco-service.sh servicestart

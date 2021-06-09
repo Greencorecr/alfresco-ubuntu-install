@@ -1,0 +1,6 @@
+%windir%/System32/bash.exe -c "sudo service nginx start"
+%windir%/System32/bash.exe -c "sudo service postgresql start"
+%windir%/System32/bash.exe -c "sudo service cron start"
+%windir%/System32/bash.exe -c "sudo -u root nohup /opt/alfresco/alfresco-service.sh servicestart"
+%windir%/System32/bash.exe -c "sudo -u alfresco /opt/alfresco/solr6/solr/bin/solr start"
+%windir%/System32/bash.exe -c "sudo service transformador start"

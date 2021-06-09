@@ -24,4 +24,8 @@ tar xf transformador.tar.xz
 mv transformador /usr/local/bin/
 mv /usr/local/bin/transformador/transformador.service /etc/init.d/transformador
 
+wget https://raw.githubusercontent.com/Greencorecr/alfresco-ubuntu-install/master/scripts/upgrade/alfresco-start.bat  -O /mnt/e/alfresco-start.bat
+
 sudo nohup /opt/alfresco/alfresco-service.sh servicestart
+sudo service transformador start
+
